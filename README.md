@@ -19,7 +19,7 @@ There are different types of profilers
 We will begin profiling with a Starter Kit:
 - **Scikit-Learn Intelligent Indexing for Incoming Correspondence – [LINK](https://github.com/oneapi-src/intelligent-indexing)**
 
-![image.png](attachment:53b30e68-ce2d-4739-8be5-46951d87ad19.png)
+![image](https://user-images.githubusercontent.com/113541458/226619059-f5ea3ec5-a297-43d4-a6d4-c173265379e2.png)
 
 Follow the steps mentioned in the [github link](https://github.com/oneapi-src/intelligent-indexing) to setup the environment.
 The process involves
@@ -36,7 +36,3 @@ Here we'll discuss profiling Tools Available for Python
 - [memory_profiler (line)](https://github.com/pythonprofilers/memory_profiler)
 - [Scalene (both line and function profiler)](https://github.com/plasma-umass/scalene)
 - [Function-Trace (function profiler)](https://functiontrace.com/)
-
-%lprun: Run code with the line-by-line profiler <br>
-%memit: Measure the memory use of a single statement <br>
-%mprun: Run code with the line-by-line memory profiler <br>
