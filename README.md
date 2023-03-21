@@ -21,7 +21,7 @@ We will begin profiling with a Starter Kit:
 
 ![image](https://user-images.githubusercontent.com/113541458/226619059-f5ea3ec5-a297-43d4-a6d4-c173265379e2.png)
 
-**Follow the steps mentioned in the [github link](https://github.com/oneapi-src/intelligent-indexing) to setup the environment.**
+**Follow the steps mentioned in the [github link](https://github.com/oneapi-src/intelligent-indexing) to setup the environment.** <br>
 The process involves
 - Setting up a virtual environment for stock/Intel®-accelerated ML
 - Preprocessing data using Pandas/Intel® oneAPI Modin and NLTK
