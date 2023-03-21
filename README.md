@@ -1,4 +1,4 @@
-# Profiliing_Guide
+# Profiling_Guide
 Profilers help to identify performance problems. These are tools designed to give the metrics to find the slowest parts of the code so that we can optimize what really matters. Profilers can gather a wide variety of metrics: wall time, CPU time, network or memory consumption, I/O operations, etc.
 <br>
 Profilers can answer questions like,
@@ -21,7 +21,7 @@ We will begin profiling with a Starter Kit:
 
 ![image](https://user-images.githubusercontent.com/113541458/226619059-f5ea3ec5-a297-43d4-a6d4-c173265379e2.png)
 
-Follow the steps mentioned in the [github link](https://github.com/oneapi-src/intelligent-indexing) to setup the environment.
+**Follow the steps mentioned in the [github link](https://github.com/oneapi-src/intelligent-indexing) to setup the environment.**
 The process involves
 - Setting up a virtual environment for stock/Intel®-accelerated ML
 - Preprocessing data using Pandas/Intel® oneAPI Modin and NLTK
@@ -29,10 +29,10 @@ The process involves
 - Predicting from the trained model on new data using scikit-learn/Intel® oneAPI scikit-learn extension.
 
 Here we'll discuss profiling Tools Available for Python
-- [Vtune](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html)
-- [Cprofile (function profiler)](https://docs.python.org/3/library/profile.html) 
-- [Profile (function profiler)](https://docs.python.org/3/library/profile.html)
-- [line_profiler (line profiler)](https://github.com/pyutils/line_profiler)
-- [memory_profiler (line)](https://github.com/pythonprofilers/memory_profiler)
-- [Scalene (both line and function profiler)](https://github.com/plasma-umass/scalene)
-- [Function-Trace (function profiler)](https://functiontrace.com/)
+- **[Vtune (both line and function profiler)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html)**
+- **[Cprofile (function profiler)](https://docs.python.org/3/library/profile.html)** 
+- **[Profile (function profiler)](https://docs.python.org/3/library/profile.html)**
+- **[line_profiler (line profiler)](https://github.com/pyutils/line_profiler)**
+- **[memory_profiler (line)](https://github.com/pythonprofilers/memory_profiler)**
+- **[Scalene (both line and function profiler)](https://github.com/plasma-umass/scalene)**
+- **[Function-Trace (function profiler)](https://functiontrace.com/)**
