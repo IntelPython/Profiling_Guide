@@ -17,11 +17,11 @@ There are different types of profilers
 <br>
 
 We will begin profiling with a Starter Kit:
-- **Scikit-Learn Intelligent Indexing for Incoming Correspondence – [LINK](https://github.com/oneapi-src/intelligent-indexing)**
+- **Scikit-Learn Intelligent Indexing for Incoming Correspondence – [Ref Kit](https://github.com/oneapi-src/intelligent-indexing)**
 
 ![image](https://user-images.githubusercontent.com/113541458/226619059-f5ea3ec5-a297-43d4-a6d4-c173265379e2.png)
 
-**Follow the steps mentioned in the [github link](https://github.com/oneapi-src/intelligent-indexing) to setup the environment.** <br>
+**Follow the steps mentioned in the [github readme](https://github.com/oneapi-src/intelligent-indexing) to setup the environment.** <br>
 The process involves
 - Setting up a virtual environment for stock/Intel®-accelerated ML
 - Preprocessing data using Pandas/Intel® oneAPI Modin and NLTK
