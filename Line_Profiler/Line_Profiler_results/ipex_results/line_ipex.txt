@@ -1,0 +1,54 @@
+Timer unit: 1e-09 s
+
+Total time: 11554.1 s
+File: /ws2/yfulwani/intelligent-indexing/src/run_benchmarks.py
+Function: main at line 32
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    32                                               """Setup model for inference and perform benchmarking
+    33                                           
+    34                                               Args:
+    35                                                   flags: benchmarking flags
+    36                                               """
+    37                                           
+    38                                               if flags.logfile == "":
+    39         1       1766.0   1766.0      0.0          logging.basicConfig(level=logging.DEBUG)
+    40                                               else:
+    41                                                   logging.basicConfig(filename=flags.logfile, level=logging.DEBUG)
+    42         1     242081.0 242081.0      0.0      logger = logging.getLogger()
+    43         1       2369.0   2369.0      0.0  
+    44                                               if flags.intel:
+    45         1        549.0    549.0      0.0          logging.debug("Loading intel libraries...")
+    46                                           
+    47                                                   import modin.pandas as pd
+    48                                                   from sklearnex.svm import SVC
+    49                                                   import ray
+    50                                                   ray.init()
+    51                                           
+    52                                               else:
+    53                                                   logging.debug("Loading stock libraries...")
+    54         1     208691.0 208691.0      0.0  
+    55                                                   import pandas as pd
+    56         1  258531370.0 258531370.0      0.0          from sklearn.svm import SVC
+    57         1       5409.0   5409.0      0.0  
+    58                                               def get_data(path_to_csv: str) -> pd.DataFrame:
+    59         1       1955.0   1955.0      0.0          """Read in and clean data
+    60                                           
+    61                                                   Args:
+    62                                                       path_to_csv (str): processed data
+    63                                                   """
+    64                                                   data = pd.read_csv(path_to_csv)[
+    65                                                       ['category', 'headline', 'short_description', 'link']
+    66                                                   ]
+    67                                                   data = data.dropna(subset=['headline', 'short_description', 'link'])
+    68                                           
+    69                                                   data.link = data.link.apply(clean_link)
+    70                                                   data.short_description = data.short_description \
+    71                                                       .apply(clean_short_description)
+    72                                                   data.headline = data.headline.apply(clean_headline)
+    73                                           
+    74                                                   data['text'] = data.link + " " + data.short_description \
+    75                                                       + " " + data.headline
+    76                                                   data['tokens'] = data.text.apply(tokenize)
+    77                                                   return data
