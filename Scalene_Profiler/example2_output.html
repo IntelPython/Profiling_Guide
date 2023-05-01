@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {color: #005f00; text-decoration-color: #005f00}
+.r2 {font-weight: bold}
+.r3 {color: #000080; text-decoration-color: #000080; font-weight: bold}
+.r4 {color: #005f00; text-decoration-color: #005f00; font-weight: bold}
+.r5 {color: #87af00; text-decoration-color: #87af00; font-weight: bold}
+.r6 {color: #7f7f7f; text-decoration-color: #7f7f7f; font-weight: bold}
+.r7 {color: #000080; text-decoration-color: #000080; font-weight: bold; font-style: italic}
+.r8 {color: #005f00; text-decoration-color: #005f00; font-weight: bold; font-style: italic}
+.r9 {color: #87af00; text-decoration-color: #87af00; font-weight: bold; font-style: italic}
+.r10 {color: #7f7f7f; text-decoration-color: #7f7f7f}
+.r11 {color: #000080; text-decoration-color: #000080}
+.r12 {color: #87af00; text-decoration-color: #87af00}
+.r13 {color: #aa22ff; text-decoration-color: #aa22ff; background-color: #f8f8f8}
+.r14 {background-color: #f8f8f8}
+.r15 {color: #008000; text-decoration-color: #008000; background-color: #f8f8f8; font-weight: bold}
+.r16 {color: #000000; text-decoration-color: #000000; background-color: #f8f8f8}
+.r17 {color: #0000ff; text-decoration-color: #0000ff; background-color: #f8f8f8}
+.r18 {color: #666666; text-decoration-color: #666666; background-color: #f8f8f8}
+.r19 {font-weight: bold; font-style: italic}
+.r20 {color: #000080; text-decoration-color: #000080; text-decoration: underline}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<html>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code>                             Memory usage: <span class="r1">▁▂▂▂▂▂▂▂▃▂▃▂▃▃▃▃▃▃▃▃▃▆▆█</span> (max:  23.36MB, growth rate:  41%)                             
+                                         example2.py: % of time = 100.00% out of   7.24s.                                          
+       ╷       ╷       ╷       ╷        ╷       ╷               ╷       ╷                                                          
+ <span class="r2">      </span>│<span class="r3">Time</span><span class="r2">   </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r4">Memory</span><span class="r2">  </span>│<span class="r4">––––––</span><span class="r2"> </span>│<span class="r4">–––––––––––</span><span class="r2">    </span>│<span class="r5">Copy</span><span class="r2">   </span>│<span class="r2">                                                         </span> 
+ <span class="r2"> </span><span class="r6">Line</span><span class="r2"> </span>│<span class="r7">Python</span><span class="r2"> </span>│<span class="r7">native</span><span class="r2"> </span>│<span class="r7">system</span><span class="r2"> </span>│<span class="r8">Python</span><span class="r2">  </span>│<span class="r8">net</span><span class="r2">    </span>│<span class="r8">timeline</span><span class="r4">/%</span><span class="r2">     </span>│<span class="r9">(MB/s)</span><span class="r2"> </span>│<span class="r2">example2.py                                              </span> 
+╺━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r10">  ... </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│                                                          
+ <span class="r10">    5 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r13">@profile</span><span class="r14">                                                </span>  
+ <span class="r10">    6 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r15">def</span><span class="r16"> </span><span class="r17">very_slow_random_generator</span><span class="r16">():</span><span class="r14">                       </span>  
+ <span class="r10">    7 </span>│<span class="r11">    2% </span>│<span class="r11">       </span>│<span class="r11">  67%  </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r16">    time</span><span class="r18">.</span><span class="r16">sleep(</span><span class="r18">5</span><span class="r16">)</span><span class="r14">                                       </span>  
+ <span class="r10">    8 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">  27%   </span>│<span class="r1">    8M </span>│<span class="r1">▃  27%         </span>│<span class="r12">       </span>│<span class="r16">    arr1 </span><span class="r18">=</span><span class="r16"> np</span><span class="r18">.</span><span class="r16">random</span><span class="r18">.</span><span class="r16">randint(</span><span class="r18">1</span><span class="r16">,</span><span class="r18">100</span><span class="r16">, size</span><span class="r18">=</span><span class="r16">(</span><span class="r18">1000</span><span class="r16">,</span><span class="r18">1000</span><span class="r16">))</span><span class="r14">   </span>  
+ <span class="r10">    9 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r16">    avg </span><span class="r18">=</span><span class="r16"> arr1</span><span class="r18">.</span><span class="r16">mean()</span><span class="r14">                                   </span>  
+ <span class="r10">   10 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r16">    </span><span class="r15">return</span><span class="r16"> avg</span><span class="r14">                                          </span>  
+ <span class="r10">  ... </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│                                                          
+ <span class="r10">   12 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r13">@profile</span><span class="r14">                                                </span>  
+ <span class="r10">   13 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r15">def</span><span class="r16"> </span><span class="r17">slow_random_generator</span><span class="r16">():</span><span class="r14">                            </span>  
+ <span class="r10">   14 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">  27%  </span>│<span class="r1">   3%   </span>│<span class="r1">    0M </span>│<span class="r1">▁   3%         </span>│<span class="r12">       </span>│<span class="r16">    time</span><span class="r18">.</span><span class="r16">sleep(</span><span class="r18">2</span><span class="r16">)</span><span class="r14">                                       </span>  
+ <span class="r10">   15 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">    8M </span>│<span class="r1">▂  27%         </span>│<span class="r12">       </span>│<span class="r16">    arr1 </span><span class="r18">=</span><span class="r16"> np</span><span class="r18">.</span><span class="r16">random</span><span class="r18">.</span><span class="r16">randint(</span><span class="r18">1</span><span class="r16">,</span><span class="r18">100</span><span class="r16">, size</span><span class="r18">=</span><span class="r16">(</span><span class="r18">1000</span><span class="r16">,</span><span class="r18">1000</span><span class="r16">))</span><span class="r14">   </span>  
+ <span class="r10">   16 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r16">    avg </span><span class="r18">=</span><span class="r16"> arr1</span><span class="r18">.</span><span class="r16">mean()</span><span class="r14">                                   </span>  
+ <span class="r10">   17 </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r16">    </span><span class="r15">return</span><span class="r16"> avg</span><span class="r14">                                          </span>  
+ <span class="r10">  ... </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│                                                          
+ <span class="r10">      </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│                                                          
+╶──────┼───────┼───────┼───────┼────────┼───────┼───────────────┼───────┼─────────────────────────────────────────────────────────╴
+ <span class="r10">      </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r11">       </span>│<span class="r1">        </span>│<span class="r1">       </span>│<span class="r1">               </span>│<span class="r12">       </span>│<span class="r19">function summary for example2.py                        </span>  
+ <span class="r10">    5 </span>│<span class="r11">    2% </span>│<span class="r11">       </span>│<span class="r11">  67%  </span>│<span class="r1">  27%   </span>│<span class="r1">    7M </span>│<span class="r1">█  27%         </span>│<span class="r12">       </span>│<span class="r16">very_slow_random_generator</span><span class="r14">                              </span>  
+ <span class="r10">   12 </span>│<span class="r11">    1% </span>│<span class="r11">       </span>│<span class="r11">  27%  </span>│<span class="r1">   3%   </span>│<span class="r1">    9M </span>│<span class="r1">█  30%         </span>│<span class="r12">       </span>│<span class="r16">slow_random_generator</span><span class="r14">                                   </span>  
+       ╵       ╵       ╵       ╵        ╵       ╵               ╵       ╵                                                          
+Top net memory consumption, by line:
+<span class="r1">(1)    15:     8 MB</span>                                                                                                                 
+<span class="r1">(2)     8:     8 MB</span>                                                                                                                 
+<span class="r1">(3)     2:     7 MB</span>                                                                                                                 
+generated by the <a class="r20" href="https://github.com/plasma-umass/scalene">scalene</a> profiler                                                                                                   
+</code></pre>
+</body>
+</html>

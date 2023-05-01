@@ -1,0 +1,16 @@
+Filename: example2.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+     4  41.2031 MiB  41.2031 MiB           1   @profile(precision=4,stream=fp)
+     5                                         def random_number_generator():
+     6  42.7539 MiB   1.5508 MiB      100003       arr1 = [random.randint(1,10) for i in range(100000)]
+     7  43.4219 MiB   0.6680 MiB      100003       arr2 = [random.randint(1,10) for i in range(100000)]
+     8  44.2266 MiB   0.8047 MiB      100003       arr3 = [arr1[i]+arr2[i] for i in range(100000)]
+     9  43.5273 MiB  -0.6992 MiB           1       del arr1
+    10  42.7617 MiB  -0.7656 MiB           1       del arr2
+    11  42.7617 MiB   0.0000 MiB           1       tot = sum(arr3)
+    12  41.9961 MiB  -0.7656 MiB           1       del arr3
+    13  41.9961 MiB   0.0000 MiB           1       print(tot)
+
+

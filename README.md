@@ -35,4 +35,4 @@ Here we'll discuss profiling Tools Available for Python
 - **[line_profiler (line profiler)](https://github.com/pyutils/line_profiler)**
 - **[memory_profiler (line)](https://github.com/pythonprofilers/memory_profiler)**
 - **[Scalene (both line and function profiler)](https://github.com/plasma-umass/scalene)**
-- **[Function-Trace (function profiler)](https://functiontrace.com/)**
+- **[FunctionTrace (function profiler)](https://functiontrace.com/)**

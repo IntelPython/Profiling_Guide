@@ -1,0 +1,31 @@
+Filename: /ws2/yfulwani/Profiling_Guide/Memory_Profiler/example3.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+     4     75.8 MiB     75.8 MiB           1   def very_slow_random_generator():
+     5     75.8 MiB      0.0 MiB           1       time.sleep(5)
+     6     75.8 MiB      0.0 MiB           1       arr1 = np.random.randint(1,100, size=(1000,1000))
+     7     75.8 MiB      0.0 MiB           1       avg = arr1.mean()
+     8     75.8 MiB      0.0 MiB           1       return avg
+
+
+Filename: /ws2/yfulwani/Profiling_Guide/Memory_Profiler/example3.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    11     68.2 MiB     68.2 MiB           1   def slow_random_generator():
+    12     68.2 MiB      0.0 MiB           1       time.sleep(2)
+    13     75.8 MiB      7.5 MiB           1       arr1 = np.random.randint(1,100, size=(1000,1000))
+    14     75.8 MiB      0.0 MiB           1       avg = arr1.mean()
+    15     75.8 MiB      0.0 MiB           1       return avg
+
+
+Filename: /ws2/yfulwani/Profiling_Guide/Memory_Profiler/example3.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    17     68.2 MiB     68.2 MiB           1   def main_func():
+    18     75.8 MiB     75.8 MiB           1       avg1 = slow_random_generator()
+    19     75.8 MiB     75.8 MiB           1       avg2 = very_slow_random_generator()
+    20                                         
+    21     75.8 MiB      0.0 MiB           1       print("Averages: {:.3f}, {:.3f}".format(avg1,avg2))

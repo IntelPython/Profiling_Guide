@@ -1,0 +1,5 @@
+20 [140421539612416] INFO mrtehelpers.mrteenv <> - Product libs directory: /home/vtune/tmp/vtune_profiler_2021.1.0/lib64
+20 [140421539612416] INFO mrtehelpers.mrteenv <> - File mask: amplxe_samplingmrte_clrprof*
+24 [140421539612416] INFO mrtehelpers.mrteenv <> - File name: libamplxe_samplingmrte_clrprof_1.0.so
+24 [140421539612416] INFO mrtehelpers.mrteenv <> - File mask: amplxe_samplingmrte_clrprof*
+29 [140421539612416] INFO mrtehelpers.mrteenv <> - File name: libamplxe_samplingmrte_clrprof_1.0.so
