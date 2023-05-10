@@ -14,7 +14,7 @@ There are different types of profilers
 
 - **Statistical profiling:**  Instead of tracking every event (call to every function), statistical profilers interrupt applications periodically and collect samples of the execution state (call stack snapshots). The call stacks are then analyzed to determine the execution time of different parts of the application. This method is less accurate, but it also reduces the overhead.
 
-<br>
+
 All the profilers we are going to discuss here are **Deterministic Profilers** because they capture precise timings of events. Although **Memory Profiler** has **mprof** module that does **statistical profiling**. It is discussed briefly in Memory Profiler notebook. <br> 
 
 This github aims to show different profilers and explain in detail the procedure to profile different workloads with different profilers.
