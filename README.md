@@ -14,6 +14,11 @@ There are different types of profilers
 
 - **Statistical profiling:**  Instead of tracking every event (call to every function), statistical profilers interrupt applications periodically and collect samples of the execution state (call stack snapshots). The call stacks are then analyzed to determine the execution time of different parts of the application. This method is less accurate, but it also reduces the overhead.
 
+<<<<<<< HEAD
+=======
+
+All the profilers we are going to discuss here are **Deterministic Profilers** because they capture precise timings of events. Although **Memory Profiler** has **mprof** module that does **statistical profiling**. It is discussed briefly in Memory Profiler notebook. <br> 
+>>>>>>> de256c238b843ea378f88f3c212bffa501399d4f
 
 All the profilers we are going to discuss here are **Deterministic Profilers** because they capture precise timings of events. Although **Memory Profiler** has **mprof** module that does **statistical profiling**. It is discussed briefly in Memory Profiler notebook. 
 
@@ -41,4 +46,17 @@ The process involves
 - Setting up a virtual environment for stock/Intel®-accelerated ML
 - Preprocessing data using Pandas/Intel® Distribution of Modin and NLTK
 - Training an NLP model for text classification using scikit-learn/Intel® Extension for Scikit-Learn*
+<<<<<<< HEAD
 - Predicting from the trained model on new data using scikit-learn/Intel® Extension for Scikit-Learn*.
+=======
+- Predicting from the trained model on new data using scikit-learn/Intel® Extension for Scikit-Learn*.
+
+This guide utilizes the following profiling tools available for Python:
+- **[VTune (both line and function profiler)](https://www.intel.com/content/www/us/en/developer/tools/oneapi/vtune-profiler.html)**
+- **[Cprofile (function profiler)](https://docs.python.org/3/library/profile.html)** 
+- **[Profile (function profiler)](https://docs.python.org/3/library/profile.html)**
+- **[line_profiler (line profiler)](https://github.com/pyutils/line_profiler)**
+- **[memory_profiler (line)](https://github.com/pythonprofilers/memory_profiler)**
+- **[Scalene (both line and function profiler)](https://github.com/plasma-umass/scalene)**
+- **[FunctionTrace (function profiler)](https://functiontrace.com/)**
+>>>>>>> de256c238b843ea378f88f3c212bffa501399d4f
