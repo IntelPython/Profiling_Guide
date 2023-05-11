@@ -26,7 +26,7 @@ from utils.preprocessing import (
     clean_short_description,
     tokenize
 )
-
+from memory_profiler import profile
 
 
 def main(flags):
@@ -35,7 +35,6 @@ def main(flags):
     Args:
         flags: benchmarking flags
     """
-
     if flags.logfile == "":
         logging.basicConfig(level=logging.DEBUG)
     else:
@@ -55,7 +54,8 @@ def main(flags):
 
         import pandas as pd
         from sklearn.svm import SVC
-
+    
+    @profile
     def get_data(path_to_csv: str) -> pd.DataFrame:
         """Read in and clean data
 
@@ -105,7 +105,8 @@ def main(flags):
 
         # Build TFIDF features and train the model
         logger.debug("Training & Evaluating Model...")
-
+        
+        @profile
         def train_data(train,test):
             vectorizer = TfidfVectorizer(
             min_df=50,
