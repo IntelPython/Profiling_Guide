@@ -44,11 +44,10 @@ def main(flags):
     if flags.intel:
         logging.debug("Loading intel libraries...")
 
-        import modin.pandas as pd
+        import pandas as pd
         from sklearnex.svm import SVC
-        import ray
-        ray.init()
-
+        
+        
     else:
         logging.debug("Loading stock libraries...")
 
