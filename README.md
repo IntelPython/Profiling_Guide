@@ -7,7 +7,7 @@ Profilers can answer questions like,
 - How much memory does the method consume?
 
 <br>
-There are different types of profilers
+There are different types of profilers:
 
 - **Deterministic Profiling:** Deterministic profilers execute trace functions at various points of interest (function call, function return) and record precise timings of these events. It means the code runs slower under profiling. Its use in production systems is often impractical.
 
